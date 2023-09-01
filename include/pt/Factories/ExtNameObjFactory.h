@@ -1,6 +1,7 @@
 #pragma once
 
 #include "pt/AreaObj/JumpSwitchArea.h"
+#include "pt/AreaObj/ToxicGasArea.h"
 #include "pt/Enemy/Anagon.h"
 #include "pt/Enemy/BallBeamer.h"
 #include "pt/Enemy/CocoSambo.h"
@@ -54,6 +55,7 @@ namespace {
         { "ForbidJumpArea", NameObjFactory::createNameObj<AreaObj> },
         { "ForbidWaterSearchArea", NameObjFactory::createNameObj<AreaObj> },
         { "JumpSwitchArea", createExtActor<pt::JumpSwitchArea> },
+        { "ToxicGasArea", createExtActor<pt::ToxicGasArea> },
         { "PipeModeCube", NameObjFactory::createBaseOriginCube<AreaObj> },
         { "PlaneCircularModeCube", NameObjFactory::createBaseOriginCube<AreaObj> },
         { "QuakeEffectArea", pt::createQuakeEffectArea },
